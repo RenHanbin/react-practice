@@ -19,8 +19,7 @@ export default class ComponentLife extends React.Component{
     // 父组件change props
     UNSAFE_componentWillReceiveProps(){
         console.log("parent component change props");
-    }
-    
+    }    
     // 组件卸载（unmount）:在正式卸载之前执行
     componentWillUnmount(){
         console.log("组件准备卸载");
@@ -36,7 +35,6 @@ export default class ComponentLife extends React.Component{
         this.props.handlerClick("我的子组件传递给父组件的数据");
     }
     render(){
-        // TODO:es6的解构赋值学习！！！
         const {count} = this.state.count;
         return(
             <div>

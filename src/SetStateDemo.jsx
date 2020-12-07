@@ -4,14 +4,22 @@ export default class SetStateDemo extends React.Component{
         super();
         this.state = {
             count: 0,
+            age: 23,
         }
     }
 
+    componentDidMount(){
+        this.setState({
+            count: this.state+1,
+            ...this.state  // 把其他的属性（未改变的）重新赋值到state当中。
+        });
+        console.log('componentDidMount'+this.state.count);
+    }
     handlerClick = ()=>{
         this.setState({
             count: this.state.count+=1,
         });
-        console.log(this.state.count);
+        console.log(this.state.count+'');
     }
     render(){
         return(

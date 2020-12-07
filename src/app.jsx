@@ -1,15 +1,18 @@
 import React from 'react';
 // import MyNav from './myNav';
 // import StateCompoment from './StateCompoment';
-// import ComponentLife from './ComponentLife';
+import ComponentLife from './ComponentLife';
 // import PassProps from './PassProps';
-// import SetStateDemo from './SetStateDemo'
+import SetStateDemo from './SetStateDemo'
 // import IfDemo from './IfDemo';
 // import KeyDemo from './KeyDemo';
-// import FormDemo2 from './FormDemo2';
+import FormDemo2 from './FormDemo2';
 import EChartsDemo from './EChartsDemo';
 import BigDataPic from './BigDataPic';
+// import FormDemo3 from './FormDemo3';
 // import GroupAlbum from './GroupAlubm';
+import Calculator from './components/Calculator';
+import CalculatorBefore from './examples/Calculator'; 
 // 先用class组件
 class App extends React.Component{
 
@@ -33,10 +36,11 @@ class App extends React.Component{
         const myNav2 = ["js", "react", "vue"]; */
         return (
             <div>
-                {/* <h1>hello react component</h1> */}
-                {/* <StateCompoment/> */}
-                {/* <ComponentLife title = {this.state.title} handlerClick = {this.handlerClick}/> */}
-               {/*  <p>{this.state.title}</p>
+                    <Calculator/> 
+                {/*  <CalculatorBefore/> */}
+                {/*  <ComponentLife title = {this.state.title} handlerClick = {this.handlerClick}/>  */}
+                 {/* <StateCompoment/> */}
+                 {/*  <p>{this.state.title}</p>
                 <PassProps handlerClick = {this.handlerClick}/>
                 <SetStateDemo/> */}
                 {/* <MyNav nav = {myNav1} title = "导航"/>
@@ -44,8 +48,10 @@ class App extends React.Component{
                 {/* <IfDemo/> */}
                 {/* <KeyDemo/> */}
                 {/* <FormDemo2/> */}
-                <EChartsDemo/> 
-                <BigDataPic/>
+                {/* <FormDemo3/> */} 
+               {/*  <EChartsDemo/> 
+                <BigDataPic/>  */}
+                {/* <SetStateDemo/> */}
                {/* <GroupAlbum/> */}
             </div>  
         );
